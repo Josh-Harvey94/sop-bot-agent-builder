@@ -1,5 +1,9 @@
 # SOP Bot for Microsoft 365 Copilot
 
+<p><img src="assets/branding/josh-harvey-logo-original.jpeg" alt="Josh Harvey — AI, Automation, Impact" width="170"></p>
+
+**A JH Agent · Designed & built by Josh Harvey**
+
 **Turn a standard operating procedure into a practical process-improvement assessment.**
 
 SOP Bot maps a process, spots unclear or duplicated work, considers Microsoft automation options, estimates staff capacity released, and explains what should remain a human decision. This open build kit lets you recreate it in **Microsoft 365 Copilot Agent Builder** using copy-and-paste configuration. No coding, API key, or Copilot Studio project is required for the core build.
@@ -26,8 +30,9 @@ For a guided experience, open **docs/index.html** from the extracted folder in a
 | [docs](docs/) | Build, knowledge, calculations, testing, pilot and source notes; interactive guide |
 | [examples](examples/) | Fictional SOPs and a complete worked assessment |
 | [templates](templates/) | Ownership, baseline, assessment, source, test and release records |
+| [assets/branding](assets/branding/README.md) | Supplied logo, monograms, watermark, creator badge and Copilot icon |
 | [tests](tests/) | Agent evaluation scenarios and automated guide checks |
-| [docs/downloads](docs/downloads/) | The original supplied HTML and eight-page PDF for reference |
+| [docs/downloads](docs/downloads/) | Original-content HTML and eight-page PDF with JH creator branding |
 
 ## What a complete assessment contains
 
@@ -67,3 +72,9 @@ Automated checks cover the copyable configuration, local links, guide consistenc
 Created from Joshua Harvey's **SOP BOT Agent Builder Guide** conversation, source material, interactive HTML and shareable PDF, supplied on 12 September 2026. The default configuration is organisation-neutral; the original downloads retain their Cornwall and Isles of Scilly context. This is an independent community resource and does not imply NHS or Microsoft endorsement. [Source and change notes](docs/source-notes.md) explain the adaptations and reference-version limitations.
 
 Improvements are welcome through [issues](https://github.com/Josh-Harvey94/sop-bot-agent-builder/issues) and pull requests. Use fictional examples when reporting problems; keep real SOPs, personal information and internal source links in your organisation's approved systems. See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+<!-- JH creator signature -->
+
+---
+
+[![A JH Agent — Designed & built by Josh Harvey](assets/branding/a-jh-agent-badge.svg)](assets/branding/README.md)

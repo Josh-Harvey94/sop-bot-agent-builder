@@ -13,3 +13,9 @@ node --test tests/guide.test.cjs
 ```
 
 Commit the regenerated `docs/index.html` with its sources. Document visible changes in the changelog. Do not silently edit the original reference downloads; they establish provenance. Any new local-tenant claims require explicit supporting evidence and a date.
+
+<!-- JH creator signature -->
+
+---
+
+[![A JH Agent — Designed & built by Josh Harvey](assets/branding/a-jh-agent-badge.svg)](assets/branding/README.md)
