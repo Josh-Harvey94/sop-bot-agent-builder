@@ -1,0 +1,17 @@
+SYNTHETIC SOP - FICTIONAL TRAINING MATERIAL
+Title: Routine office equipment request
+Version: 0.1 | Owner role: Business Support Manager
+Scope: Requests for standard, low-cost office equipment. No patient or personal staff case data is needed. Purchasing authority remains with a manager.
+
+1. Trigger: A colleague emails a shared business-support mailbox with the item requested, quantity, team and reason.
+2. A business-support coordinator checks the required fields. Missing information is requested by email; the case waits for a response.
+3. The coordinator copies the request into an Excel tracker with a reference number, date received, team, item and status.
+4. The coordinator sends an acknowledgement with the reference number.
+5. The coordinator sends the request to the Business Support Manager. The manager checks need and budget and approves or declines. The coordinator cannot make this decision.
+6. Every Tuesday the coordinator reviews open cases and emails a reminder for requests waiting more than five working days. The manager handles unusual items and exceptions.
+7. The coordinator records the manager's decision and informs the requester. Approved orders follow the separately controlled purchasing procedure.
+8. The coordinator closes the tracker entry once the request is resolved. The approved retention schedule determines record retention.
+
+Known documentation gaps: no defined route when the manager is absent; no target acknowledgement time; no explicit process for duplicate requests; purchasing and retention procedures are referenced but not supplied here.
+No local licence, integration, connector, data-classification decision or automation approval is established by this fictional SOP.
+Frequency, staff time, active weeks and exceptions are intentionally omitted so a tester can provide or withhold them.

@@ -1,0 +1,10 @@
+SYNTHETIC SOP - FICTIONAL TRAINING MATERIAL
+Title: Internal request handling, draft 0.0
+
+1. Check the request promptly.
+2. Send it to the relevant manager when appropriate.
+3. Update the system.
+4. Escalate if necessary.
+5. Close the case when complete.
+
+There is no glossary, named accountable role, target time, system definition, escalation threshold, route, absence cover or definition of completion. The process is still being designed. No volume or time measurements have been collected.

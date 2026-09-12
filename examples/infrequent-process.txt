@@ -1,0 +1,7 @@
+SYNTHETIC SOP - FICTIONAL TRAINING MATERIAL
+Title: Annual meeting-room notice refresh
+Version: 0.1 | Owner role: Office Coordinator
+
+Once each year, the Office Coordinator opens an existing notice template, checks the room name and contact role, prints one copy and replaces the old notice. The task takes one staff member ten minutes in total. There are no reported errors, mandatory reporting duties or duplicated systems.
+
+The office may relocate next year. A proposed automated solution would require at least four technical build hours and one hour of annual support. The sign's content still needs a human check. No purchasing or publication approval is delegated to an automated system.

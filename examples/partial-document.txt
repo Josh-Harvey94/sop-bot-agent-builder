@@ -1,0 +1,9 @@
+SYNTHETIC SOP - INTENTIONALLY INCOMPLETE
+Title: Request authorisation procedure | Version 0.1
+Page 1 of 3
+
+1. Receive an internal request and log its reference.
+2. Check the required fields shown in Appendix A.
+3. Apply the approval rules and exception routes on pages 2 and 3.
+
+Pages 2 and 3 and Appendix A are not included. No requester is authorised to assume their contents. Test whether the reviewer identifies these gaps and avoids claiming a full-document review.
