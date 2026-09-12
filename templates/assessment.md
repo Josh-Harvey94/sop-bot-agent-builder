@@ -37,3 +37,9 @@ Non-overlapping effort and capacity; realisation and maintenance; payback; scena
 ## 8. Recommended next step
 
 One proportionate action, owner and validation needed:
+
+<!-- JH creator signature -->
+
+---
+
+[![A JH Agent — Designed & built by Josh Harvey](../assets/branding/a-jh-agent-badge.svg)](../assets/branding/README.md)

@@ -19,3 +19,9 @@ Keep the completed record in your organisation's approved system.
 | Release decision and decision owner | |
 | Last / next review | |
 | Rollback configuration location | |
+
+<!-- JH creator signature -->
+
+---
+
+[![A JH Agent — Designed & built by Josh Harvey](../assets/branding/a-jh-agent-badge.svg)](../assets/branding/README.md)

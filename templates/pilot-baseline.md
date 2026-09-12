@@ -42,3 +42,9 @@ Incidents or near misses and response:
 Predicted versus observed benefit; hidden work or overlapping savings:
 
 Owner's next decision, reason, date and review point:
+
+<!-- JH creator signature -->
+
+---
+
+[![A JH Agent — Designed & built by Josh Harvey](../assets/branding/a-jh-agent-badge.svg)](../assets/branding/README.md)
