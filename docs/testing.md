@@ -170,3 +170,9 @@ Run every scenario and resolve failures before widening access. Check the follow
 ## Regression and failure handling
 
 Save exact input/version, expected result, actual result, reviewer, date and correction. Re-run affected tests after an edit and the full pack before release. Investigate unsupported source claims, missing document sections, removed human decisions and arithmetic errors before proceeding. Repeat material cases if behaviour is inconsistent. Record limitations explicitly; do not mark an unexecuted test as passed.
+
+<!-- JH creator signature -->
+
+---
+
+[![A JH Agent — Designed & built by Josh Harvey](../assets/branding/a-jh-agent-badge.svg)](../assets/branding/README.md)

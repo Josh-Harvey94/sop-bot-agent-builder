@@ -7,7 +7,7 @@ Prepared on 12 September 2026 from the user-supplied material in **SOP BOT Agent
 - [Original interactive HTML](downloads/SOP_Bot_Agent_Builder_Interactive_Guide.original.html).
 - [Original eight-page shareable PDF](downloads/SOP_Bot_Agent_Builder_Shareable_Guide.original.pdf).
 
-The supplied HTML and PDF are preserved byte-for-byte as reference downloads. Their named NHS organisation is original context, not a claim that a new user's instance represents that organisation. The source Markdown contained internal SharePoint and email references; its concepts informed this kit, while private links and the raw conversation were not republished. Linked internal documents were not independently fetched or validated for this release.
+Version 1.0.1 adds Josh Harvey creator branding to the supplied HTML and PDF while retaining their reference content. The `.original` filenames remain for existing links; they now mean original-content references, not byte-identical files. [source-original-checksums.json](downloads/source-original-checksums.json) records the unmodified supplied files; [source-checksums.json](downloads/source-checksums.json) verifies the current branded downloads. Their named NHS organisation is original context, not a claim that a new user's instance represents that organisation. The source Markdown contained internal SharePoint and email references; its concepts informed this kit, while private links and the raw conversation were not republished. Linked internal documents were not independently fetched or validated for this release.
 
 ## Which version to follow
 
@@ -43,3 +43,9 @@ Checked on 12 September 2026. Microsoft controls feature availability; verify yo
 | Eligibility and licensing | [Prerequisites](https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/prerequisites) |
 
 The effort bands, verdict categories and assessment structure come from the supplied SOP Bot material; they are not Microsoft guarantees. The local software checks validate the kit, not the behaviour of an agent in a tenant. No Copilot execution or local organisational approval is claimed for this release.
+
+<!-- JH creator signature -->
+
+---
+
+[![A JH Agent — Designed & built by Josh Harvey](../assets/branding/a-jh-agent-badge.svg)](../assets/branding/README.md)

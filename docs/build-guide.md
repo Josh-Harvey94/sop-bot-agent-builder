@@ -16,7 +16,7 @@ Open Microsoft 365 Copilot and select **New agent → Skip to configure**. The m
 
 ## 3. Configure the name and description
 
-Copy the entire text of [name.txt](../agent/name.txt) and [description.txt](../agent/description.txt) into the corresponding fields. Choose a built-in document, checklist or review icon. The portable default does not assume an NHS organisation. You can rename your local instance, staying within the platform limit.
+Copy the entire text of [name.txt](../agent/name.txt) and [description.txt](../agent/description.txt) into the corresponding fields. Where the icon control is available, upload the supplied [JH agent icon](../assets/branding/jh-agent-icon.png). Use the [branding guide](../assets/branding/README.md) for reusable logos and document watermarks. The portable default does not assume an NHS organisation. You can rename your local instance, staying within the platform limit.
 
 ## 4. Paste the complete instructions
 
@@ -76,3 +76,9 @@ Record configuration versions, knowledge changes and test evidence. Re-run the r
 | Agent claims it can deploy or approve | Correct configuration and fail the relevant tests before sharing. |
 | Local HTML progress will not persist | The browser may block storage or clear it; keep an external evidence log. Copy blocks remain usable. |
 | GitHub displays HTML code | Download ZIP, extract and open docs/index.html, or use the hosted guide linked in the README. |
+
+<!-- JH creator signature -->
+
+---
+
+[![A JH Agent — Designed & built by Josh Harvey](../assets/branding/a-jh-agent-badge.svg)](../assets/branding/README.md)

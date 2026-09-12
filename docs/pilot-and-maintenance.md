@@ -23,3 +23,9 @@ Keep the [release log](../templates/release-log.csv), [test evidence](../templat
 Re-run affected tests after instruction, knowledge or capability changes. Re-run the full pack before widening access and after material platform/model behaviour changes. Record the date, tenant, response mode, exact input, agent version and reviewer. Do not transfer an old pass result automatically to a changed configuration.
 
 Browser progress is only a convenience on that browser and origin. It is not a shared audit log. Keep substantive evidence and sign-off in your organisation's controlled record system. The guide's export contains checklist states and calculator values, not Copilot responses or independent approval.
+
+<!-- JH creator signature -->
+
+---
+
+[![A JH Agent — Designed & built by Josh Harvey](../assets/branding/a-jh-agent-badge.svg)](../assets/branding/README.md)

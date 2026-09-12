@@ -52,3 +52,9 @@ Build-only payback excludes discovery, permissions, reviews, testing, training a
 Effort bands in the guide are source-derived heuristics: Simple 2–8 hours; Small 1–3 days; Medium 3–10 days; Complex 2–8 weeks or longer. State working hours per day/week before converting. They are not delivery commitments.
 
 When opportunities overlap, assess a combined option using the final end-state process and count shared build work once. Do not add separate “capture”, “copying” and “tracker” savings if they replace the same minutes.
+
+<!-- JH creator signature -->
+
+---
+
+[![A JH Agent — Designed & built by Josh Harvey](../assets/branding/a-jh-agent-badge.svg)](../assets/branding/README.md)

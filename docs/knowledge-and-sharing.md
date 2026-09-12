@@ -30,3 +30,9 @@ Use [knowledge-source-register.csv](../templates/knowledge-source-register.csv).
 A public GitHub repository distributes the build material. Copilot sharing controls distribute an instance within a tenant. Choose chat access for users and edit access for maintainers, with local policy determining wider sharing. Source access and agent access are separate checks. [Microsoft's sharing documentation](https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-builder-share-manage-agents) explains these roles and the treatment of source permissions.
 
 The repository does not contain a Teams app manifest or a tenant export. If you later export an agent using Microsoft's download facility, review the package and its knowledge dependencies separately before distributing it.
+
+<!-- JH creator signature -->
+
+---
+
+[![A JH Agent — Designed & built by Josh Harvey](../assets/branding/a-jh-agent-badge.svg)](../assets/branding/README.md)
