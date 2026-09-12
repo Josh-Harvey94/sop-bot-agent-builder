@@ -45,7 +45,7 @@ with (ROOT / 'templates/test-evidence.csv').open(encoding='utf-8',newline='') as
 require([row['Test ID'] for row in evidence] == [case['id'] for case in scenarios], 'Evidence rows differ from test pack')
 require(all(row['Status'] == 'NOT RUN' for row in evidence), 'Public evidence template must not imply tests were run')
 for name, expected in json.loads((ROOT / 'docs/downloads/source-checksums.json').read_text()).items():
-    require(hashlib.sha256((ROOT / 'docs/downloads' / name).read_bytes()).hexdigest() == expected, f'Original file changed: {name}')
+    require(hashlib.sha256((ROOT / 'docs/downloads' / name).read_bytes()).hexdigest() == expected, f'Branded reference checksum differs: {name}')
 
 def check_link(source, target):
     target = html.unescape(target)
@@ -83,4 +83,4 @@ for path in ROOT.rglob('*'):
                 require(not re.search(pattern,text,re.I), f'Potential private source/credential in {path.relative_to(ROOT)}')
 if errors:
     raise SystemExit('\n'.join(errors))
-print('PASS: instruction limits, configuration, guide consistency, synthetic tests, blank evidence, original checksums, local links and private-source scan.')
+print('PASS: instruction limits, configuration, guide consistency, synthetic tests, blank evidence, branded reference checksums, local links and private-source scan.')

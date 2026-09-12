@@ -6,9 +6,10 @@ import html
 import json
 import re
 from pathlib import Path
+from branding import brand_html, brand_markdown
 
 ROOT = Path(__file__).resolve().parents[1]
-VERSION = "1.0.0"
+VERSION = "1.0.1"
 
 def read(path):
     return (ROOT / path).read_text(encoding="utf-8").strip()
@@ -16,6 +17,8 @@ def read(path):
 def write(path, text):
     target = ROOT / path
     target.parent.mkdir(parents=True, exist_ok=True)
+    if target.suffix == '.md':
+        text = brand_markdown(target, text)
     target.write_text(text.rstrip() + "\n", encoding="utf-8", newline="\n")
 
 original = read("docs/downloads/SOP_Bot_Agent_Builder_Interactive_Guide.original.html")
@@ -72,7 +75,9 @@ page = re.sub(r'(<section class="section" id="configure">.*?)(</section>)', lamb
 page = page.replace('Run the tests before sharing', 'Run all 12 tests before sharing')
 page = page.replace('<button class="btn ghost" onclick="resetGuide()">Reset progress</button>', '<button class="btn ghost" onclick="exportProgress()">Export progress</button><button class="btn ghost" onclick="resetGuide()">Reset progress</button>')
 notice = '''<section class="section" id="kit"><div class="eyebrow">Public build kit · 1.0.0</div><h2>Recreate SOP Bot in your organisation</h2><p>This guide provides configuration to copy into Microsoft 365 Copilot Agent Builder. An eligible account and tenant permissions are required. The instructions are organisation-neutral.</p><div class="row"><a href="../agent/instructions.txt" download>Download instructions</a><a href="../knowledge/assessment-framework.txt" download>Download knowledge framework</a><a href="build-guide.md">Full build guide</a><a href="https://github.com/Josh-Harvey94/sop-bot-agent-builder">GitHub repository</a></div><p class="mini">Original reference downloads: <a href="downloads/SOP_Bot_Agent_Builder_Shareable_Guide.original.pdf">PDF</a> · <a href="downloads/SOP_Bot_Agent_Builder_Interactive_Guide.original.html" download>HTML</a>. They retain the original organisation context and earlier logic. Follow this current guide for new builds.</p><p class="mini">Progress is stored in this browser for this configuration version. Export it for your records; test responses and owner sign-off need a separate local evidence log. This page has no analytics or external scripts.</p><p id="storageNotice" class="callout warn" hidden>Browser storage is unavailable. Progress will last only for this page session; export it before closing.</p><p id="copyNotice" class="mini" role="status" aria-live="polite"></p></section>'''
+notice = notice.replace('Public build kit · 1.0.0', 'Public build kit · ' + VERSION).replace('Original reference downloads:', 'Reference downloads with JH branding:')
 page = page.replace('<main>', '<main>\n' + notice, 1)
+page = re.sub(r'<p><strong>Icon:</strong>.*?</p>', '<p><strong>Icon:</strong> upload the supplied <a href="../assets/branding/jh-agent-icon.png" download>JH agent icon</a> where the icon control is available. See the <a href="../assets/branding/README.md">branding guide</a> for reusable artwork and creator attribution.</p>', page, count=1)
 page = page.replace('Add the assessment framework first.', 'Add the supplied <a href="../knowledge/assessment-framework.txt" download>assessment-framework.txt</a> first. Do not upload this whole repository as knowledge.')
 page = page.replace('Wait until new sources are no longer marked <strong>Preparing</strong>.', 'Wait until new sources are no longer marked <strong>Preparing</strong>. Keep broad web search and personal email/Teams grounding off for this baseline. Agent Builder cannot fully block general AI knowledge; check unsupported claims in tests.')
 page = page.replace('Minutes saved per case</label>', 'Gross minutes saved per case per staff member</label>')
@@ -90,7 +95,7 @@ page = page.replace('<script>', '<dialog id="copyDialog"><h2>Copy this text</h2>
 page = page.replace('<script>', '<dialog id="resetDialog"><h2>Reset this guide?</h2><p>This clears this configuration version’s build tasks, tests, controls and calculator values in this browser. Export progress first if you want to keep a record.</p><div class="row"><button class="btn" id="confirmReset">Reset all progress</button><form method="dialog"><button class="btn secondary">Keep progress</button></form></div></dialog>\n<script>', 1)
 script = 'const guideData = ' + json.dumps(data, ensure_ascii=False).replace('</','<\\/') + ';\n' + read('scripts/guide-core.js') + '\n' + read('scripts/guide-ui.js')
 page = re.sub(r'<script>.*?</script>', lambda _: '<script>\n' + script + '\n</script>', page, flags=re.S)
-write('docs/index.html', page)
+write('docs/index.html', brand_html(page, 'Version ' + VERSION))
 
 test_doc = '# Test SOP Bot before sharing\n\nThese are manual Copilot evaluation scenarios. All evidence rows start **NOT RUN**. Automated repository checks do not execute an agent.\n\nUse a fresh chat for each test, record the local agent version and response mode, supply the linked synthetic file when listed, then paste the prompt. For TXT attachments that are unavailable in your interface, paste the full text. Assess meaning and arithmetic, not exact wording. Record actual responses in your approved local system using [test-evidence.csv](../templates/test-evidence.csv).\n\nThe first nine themes are from the original guide; T10–T12 add document coverage, double-counting and non-positive-benefit checks.\n\n'
 for case in tests:
@@ -111,7 +116,7 @@ if not evidence_path.exists():
 manifest_path = ROOT / 'docs/downloads/source-checksums.json'
 hashes = {path.name: hashlib.sha256(path.read_bytes()).hexdigest() for path in (ROOT / 'docs/downloads').glob('*.original.*')}
 if manifest_path.exists():
-    assert json.loads(manifest_path.read_text()) == hashes, 'Original reference download changed'
+    assert json.loads(manifest_path.read_text()) == hashes, 'Branded reference download changed; review and update its checksum'
 else:
     write('docs/downloads/source-checksums.json', json.dumps(hashes, indent=2))
 write('docs/.nojekyll', '')
