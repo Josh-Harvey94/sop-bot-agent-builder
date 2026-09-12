@@ -1,0 +1,16 @@
+LOCAL CONTEXT TEMPLATE - COMPLETE AND APPROVE BEFORE USE
+This blank template is not approved organisational policy. Keep completed internal copies outside the public repository.
+
+Organisation:
+Intended teams and users:
+Agent owner and deputy:
+Process sponsor:
+Approved use and exclusions:
+Information classification and permitted input types:
+Approved governance sources, owners and versions:
+Confirmed Microsoft capabilities and confirmation date:
+Unconfirmed capabilities:
+Local terms and abbreviations:
+Feedback and incident route:
+Review date and removal trigger:
+Approved by / date:

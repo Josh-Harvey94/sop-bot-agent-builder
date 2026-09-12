@@ -1,0 +1,51 @@
+SOP BOT ASSESSMENT FRAMEWORK
+Version 1.0.0 | 12 September 2026 | Generic reference, not local policy
+
+Purpose: common terminology for advisory process assessments. Local ownership, permissions, technical availability and approvals are not established by this file.
+
+Review dimensions: purpose; trigger; outcome; scope and exclusions; roles; systems and documents; ordered activities; decisions and approvals; handoffs; escalations; frequency; exceptions; duplication; waiting; errors; rework; and control of versions.
+
+Verdicts:
+BUILD: a proportionate candidate for local validation and implementation approval.
+PILOT: a promising option needing a bounded test of assumptions or feasibility.
+IMPROVE THE PROCESS FIRST: unresolved ambiguity, inconsistency or controls.
+ASSIST, BUT KEEP A HUMAN DECISION: support administration or preparation; retain accountable judgement.
+NOT WORTH AUTOMATING: effort, maintenance or instability outweigh likely benefit.
+DO NOT AUTOMATE: risk, accountability, data quality or exception handling prevents an acceptable option.
+
+Effort bands are planning heuristics inherited from the source guide, not measured performance or Microsoft estimates:
+Simple: 2-8 technical hours.
+Small: 1-3 technical working days.
+Medium: 3-10 technical working days.
+Complex: 2-8 weeks or longer.
+Converting days or weeks to hours requires an explicit working-hours assumption. Calendar delivery also depends on discovery, permissions, review, testing, training and staff availability.
+
+Capacity calculation:
+Gross staff hours per period = minutes saved per case per staff member x cases per period x staff who EACH save that time / 60.
+If minutes are already the total across staff, the multiplier is 1.
+Realised annual hours = gross hours per active week x active weeks per year x realisation fraction.
+Net annual hours = realised annual hours - annual maintenance/support hours.
+Average monthly net hours = net annual hours / 12.
+Build-only payback months = technical build hours / positive average monthly net hours.
+Full implementation payback uses all one-off implementation effort in the numerator.
+With zero or negative net monthly hours there is no positive payback. Negative net hours indicate extra workload.
+
+Realisation reflects retained checking, exceptions and adoption. Deductions already included in the minutes should not be applied again. Maintenance is a separate deduction unless explicitly included already. Benefits from overlapping improvements cannot be added twice. Reduced elapsed waiting time is different from reduced staff working time. Capacity released is not automatically a cash saving.
+
+Illustrative calculation, not observed results:
+5 gross minutes x 40 cases per active week x 1 staff member / 60 = 3.333 hours per active week.
+46 active weeks and 70% realisation give 107.333 realised annual hours.
+12 annual maintenance hours give 95.333 net annual hours and 7.944 average net monthly hours.
+16 technical build hours / 7.944 = 2.014 months of build-only payback.
+Other one-off costs are excluded. Real volumes, checks and support must be measured in a local pilot.
+
+Confidence:
+High: specific accessible process evidence and confirmed measurements with limited unresolved assumptions. This is still not implementation approval.
+Medium: reasonably clear process with some material assumptions or feasibility questions.
+Low: missing, uncertain or conflicting process information or unsupported benefit estimates.
+
+Evidence classes: document fact; user-confirmed context; assumption; estimate; technical possibility. A complete assessment distinguishes these and identifies missing or unreadable source sections.
+
+Assessment structure: overall verdict; what the SOP does; current process; SOP improvements; automation opportunities; what should remain human-led; overall benefit; recommended next step.
+
+Candidate Microsoft tools: Forms, SharePoint, Power Automate, Teams, Outlook, Planner, Power Apps, Power BI, Word templates, Excel/Office Scripts, Microsoft 365 Copilot, Copilot Studio, AI Builder and Power Automate Desktop. These are examples to assess, not a statement that any licence, integration, connector, environment or permission is locally available.
