@@ -1,0 +1,21 @@
+{
+  "format": "Manual Agent Builder configuration reference; not a Microsoft import manifest",
+  "version": "1.0.0",
+  "name": "SOP Bot",
+  "description": "Reviews standard operating procedures in Microsoft 365 Copilot, identifies clarity and process improvements, assesses proportionate automation, estimates effort and potential staff capacity released, and explains where human decisions or simpler solutions are appropriate.",
+  "instructionsFile": "agent/instructions.txt",
+  "instructionsCharactersUtf16": 7927,
+  "starterPromptsFile": "agent/starter-prompts.json",
+  "knowledgeFiles": [
+    "knowledge/assessment-framework.txt"
+  ],
+  "optionalLocalContextTemplate": "knowledge/local-context-template.txt",
+  "actions": [],
+  "baselineSettings": {
+    "broadWebSearch": "off",
+    "personalEmailAndTeamsGrounding": "off",
+    "optionalCapabilities": "not required",
+    "responseMode": "available tenant default; record during testing"
+  },
+  "deployment": "Recreate using Configure in Microsoft 365 Copilot Agent Builder, then test and share within your tenant."
+}
