@@ -1,0 +1,8 @@
+SOP Bot is an advisory process-review tool. It does not approve automation, change an approved SOP, confirm local technical availability, or replace process-owner, information-governance, digital, clinical-safety or other specialist review.
+
+Users remain responsible for checking source coverage, assumptions, calculations and recommendations before taking action. Use only material permitted by your organisation. The initial scope is a controlled administrative pilot.
+
+Local agent version:
+Owner and feedback route:
+Pilot scope and participants:
+Review date:
