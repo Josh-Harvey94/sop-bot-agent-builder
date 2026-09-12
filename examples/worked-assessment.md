@@ -68,3 +68,9 @@ Build-only payback is 16 ÷ (95.33 ÷ 12) = about 2.0 months. At 40% and 90% rea
 ## 8. Recommended next step
 
 Have the process owner validate the process gaps and time baseline with the intended coordinator, then take the single administrative workflow to the local digital team for a bounded feasibility and pilot decision. Keep the existing manual route available.
+
+<!-- JH creator signature -->
+
+---
+
+[![A JH Agent — Designed & built by Josh Harvey](../assets/branding/a-jh-agent-badge.svg)](../assets/branding/README.md)
