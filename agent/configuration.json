@@ -1,6 +1,6 @@
 {
   "format": "Manual Agent Builder configuration reference; not a Microsoft import manifest",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "name": "SOP Bot",
   "description": "Reviews standard operating procedures in Microsoft 365 Copilot, identifies clarity and process improvements, assesses proportionate automation, estimates effort and potential staff capacity released, and explains where human decisions or simpler solutions are appropriate.",
   "instructionsFile": "agent/instructions.txt",

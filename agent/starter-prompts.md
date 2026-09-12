@@ -17,3 +17,9 @@ Review the SOP I provide step by step. Identify manual and repetitive work, real
 ## Is this worth automating?
 
 Carry out a concise initial triage of the SOP I provide. Identify the strongest opportunity, the main reason not to automate, important missing information, indicative effort, likely benefit and whether the next step should be Build, Pilot, Improve the Process First, Assist but Keep a Human Decision, Not Worth Automating or Do Not Automate.
+
+<!-- JH creator signature -->
+
+---
+
+[![A JH Agent — Designed & built by Josh Harvey](../assets/branding/a-jh-agent-badge.svg)](../assets/branding/README.md)
